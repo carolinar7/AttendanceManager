@@ -11,8 +11,9 @@ import java.util.Properties;
 import java.util.Random;
 
 public class EmailConnect {
-
-    private String userName = "suncoastattendance@gmail.com";
+    //insert the email you want to use
+    private String userName = "";
+    //insert the password for that email
     private String passWord = "suncoast_Chargers";
     private String recipient;
     private String subject;
@@ -21,7 +22,7 @@ public class EmailConnect {
     private String code;
    
 
-    //makes a string from random characters of a larger string
+    //makes a string from random characters of a larger string to be used in verifying email
     String getCodeGenerator() 
     { 
         String codeGenerator = "0123456789"+ "abcdefghijklmnopqrstuvxyz"; 
