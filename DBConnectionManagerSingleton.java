@@ -12,7 +12,7 @@ public class DBConnectionManagerSingleton {
 	private static DBConnectionManagerSingleton dbConnectionManager = null;
 
 	private static final String user = "root";
-	private static final String pass = "cristorey7";
+	private static final String pass = "password";
 	private static final String dbURL = "jdbc:mariadb://localhost:3306/fredS_SeniorProj";
 
 	private Connection conn;
@@ -64,11 +64,6 @@ public class DBConnectionManagerSingleton {
 		if (conn != null) {
 			System.out.println("We have a database connection!!!");
 			Statement s = dbConn.stmt;
-//		s.executeUpdate("Create table Player(username varchar(50) Primary key, password varchar(50), maxTurns int)");
-//		s.executeUpdate("create table CurrentGame(userID int Identity Primary Key, username varchar(50) FOREIGN KEY REFERENCES Player(username),  currentMoney float, currentTurn int, squid bit, lilBoi bit, egg bit, khash int, spam int, chickenFeet int, currentHappy int, currentHunger int, ball int, baster int, bone int)");
-//		s.executeUpdate("drop table CurrentGame");
-//		s.executeUpdate("drop table Player");
-		
 		}
 	}
 
